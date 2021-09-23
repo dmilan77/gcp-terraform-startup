@@ -9,6 +9,3 @@ variable "project_id" {
 variable "compute_engine_service_account" {
   description = "Service account to associate to the nodes in the cluster"
 }
-variable "impersonate_service_account" {
-  description = "terrafrom service accoutn"
-}
