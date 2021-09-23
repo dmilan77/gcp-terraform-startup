@@ -1,4 +1,5 @@
 # use impersonate service account
+
 ```
 gcloud auth list
 export TFSA="terraform-sa@data-protection-01.iam.gserviceaccount.com"
@@ -17,6 +18,7 @@ terraform plan -out ".tfout"
 terraform apply ".tfout"   
 terraform destroy --auto-approve  
 ```
+
 # Destroy
 ```
 rm -rf ".tfout"; rm -rf .terraform;rm -rf .terraform.lock.hcl ;rm -rf ~/.config
