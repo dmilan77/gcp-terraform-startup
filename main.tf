@@ -2,7 +2,7 @@
 provider "google" {
   version = "~> 3.85.0"
   region  = var.region
-  #impersonate_service_account = var.impersonate_service_account
+  impersonate_service_account = var.impersonate_service_account
 }
 
 resource "google_service_account" "compute_engine_service_account" {
