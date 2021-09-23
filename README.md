@@ -7,7 +7,7 @@ gcloud auth  login --no-launch-browser
 # gcloud auth application-default login --no-launch-browser
 ```
 
-
+# Terraform create
 
 ```
 export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud --impersonate-service-account=${TFSA} auth print-access-token)
@@ -20,5 +20,6 @@ terraform destroy --auto-approve
 # Destroy
 ```
 rm -rf ".tfout"; rm -rf .terraform;rm -rf .terraform.lock.hcl ;rm -rf ~/.config
+unset GOOGLE_OAUTH_ACCESS_TOKEN
 
 ```
